@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "../styles/Products.module.css";
 import Image from "next/image";
-export const getStaticProps = async () => {
+
+// SSR -- on page visit
+export const getServerSideProps = async () => {
   //api call
   // This ll work only on server side not in browser
   const response = await fetch("https://fakestoreapi.com/products");

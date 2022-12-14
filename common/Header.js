@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import styles from "../styles/Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -19,13 +20,10 @@ const Header = () => {
         <div class="col-6 m-auto">
           <Navbar />
         </div>
-        <div class="col-3  m-auto">
-          <div class="input-group">
-            <input type="text" class="form-control" />
-            <button class="btn btn-outline-secondary" type="button">
-              Search
-            </button>
-          </div>
+        <div class="col-3  m-auto justify-content-end d-flex">
+          <button class="btn btn-outline-secondary col-6" type="button">
+            <Link href="/login" >Login</Link>
+          </button>
         </div>
       </div>
     </div>
