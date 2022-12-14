@@ -18,6 +18,9 @@ const Navbar = () => {
         <Link className={styles.navLinks} href="/test">
           Test
         </Link>
+        <Link className={styles.navLinks} href="/batches">
+          Batches
+        </Link>
       </h2>
     </div>
   );
